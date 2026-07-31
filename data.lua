@@ -1,6 +1,8 @@
 for _,f in pairs(data.raw.fluid) do
 	if not string.find(f.name, "parameter-") and f.name ~= "fluid-unknown" then
-		f.auto_barrel = true
+		if settings.startup["more-barrels-include-plasma"].value or f.name ~= "fusion-plasma" then
+			f.auto_barrel = true
+		end
 	end
 end
 

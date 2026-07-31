@@ -1,0 +1,12 @@
+{
+    "name": "more-barrels-fenhl",
+    "title": "More Barrels (Fenhl's fork)",
+	"author": "zebez, Fenhl",
+	"version": "0.0.2",
+	"factorio_version": "2.1",
+	"description": "Adds more fluid barrels.\n\nEvery fluid that didn't have a barrel recipe now has one.\n\nWanna barrel steam? Go ahead! How about lava? Or even plasma!? Don't ask me how to get it in the barrel, I just make the recipes.",
+	"dependencies": [
+		"base >= 2.1",
+		"space-age >= 2.1"
+	]
+}

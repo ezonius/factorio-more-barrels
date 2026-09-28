@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 2026.09.28
+  Features:
+    - Added a fluid blacklist setting (comma-separated fluid names) so specific fluids can be excluded from barrel recipes. By default excludes ee-super-pump-speed-fluid, cybersyn-lost-train, cybersyn-missing-train, cybersyn-nonempty-train-barrel, and muluna-heat.
+    - Fluids from other mods that explicitly opt out of barrelling (auto_barrel = false), e.g. rubia-froth (Rubia), royal-jelly and blood (Apia-Carnova), spores (Quality Seeds), methane (Cerys), and the zinc solutions (Paracelsin), are no longer forced into barrels.
+    - Added an 'Overwrite opt-outs' setting (off by default) to force barrels even for opt-out fluids, plus an opt-out whitelist to override specific fluids.
+    - The opt-out whitelist defaults to the fluids the base game itself opted out of barrelling (steam, lava, molten metals, thruster fluids, etc.), so those keep working as before; opt-outs from other mods remain respected.
+    - Added optional dependencies on mods that ship auto_barrel opt-outs (Cerys, Apia, Paracelsin, Muluna, Quality Seeds, Rubia) so this mod loads after them and the opt-out whitelist/overwrite actually takes effect (e.g. barrelling spores from Quality Seeds now works).
+
 Version: 0.0.3
 Date: 2026.07.31
   Info:
